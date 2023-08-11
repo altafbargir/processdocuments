@@ -8,50 +8,77 @@
 <body>
     <h1>Process Document Repository</h1>
 
-    <h2>General Process Document</h2>
-    <ul>
-        <li>Deployment - Role & responsibilities: <a href="https://drive.google.com/file/d/1yNu9rt45qoIrKUe5wlpjDT-0dF8szOSi/view?usp=sharing" target="_blank">URL</a></li>
-        <li>Glimpse Analytics - Holiday Request Process: <a href="https://drive.google.com/file/d/1GyPjwxILzbsK7YdSj9CFstY3vUlkW6Pk/view?usp=sharing" target="_blank">URL</a></li>
-        <li>Mentorship Plan - Sheet1: <a href="https://drive.google.com/file/d/1iEQFHhdvxuy_NSx2rt8oUpvkn47tRQ_N/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Performance Measurement Criteria - Main: <a href="https://drive.google.com/file/d/1I8qkSo7DE72NIa0HxGjTDicL9ekrIhiL/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Professional tips: <a href="https://drive.google.com/file/d/1BabgEePvWz5LeKdEnimTpz0O8Caysz2-/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Glimpse - Technical Guide - v1.0: <a href="https://drive.google.com/file/d/1A5f4tLzRJtz-lCKvdQqLeaAYLetEiXzn/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Todo Process: <a href="https://drive.google.com/file/d/1A5f4tLzRJtz-lCKvdQqLeaAYLetEiXzn/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Documents Etiquette : Template: <a href="https://docs.google.com/document/d/16EzlIreEYWeX8zqUrSAmM7LMV5UgSVvMPbtg3YZU8fU/edit?usp=sharing" target="_blank">URL</a></li>
-    </ul>
+    <div id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br>
 
-    <h2>Regular Deployment</h2>
-    <ul>
-        <li>New deployment process: <a href="https://drive.google.com/file/d/1vMVKks1QguVr9IOUSOFRDJtQ6gl39Ywj/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Combined Master Document v1: <a href="https://drive.google.com/file/d/1m7qavCpLPVPHdbMJAgekEniE8pGBmDUC/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Auto restart & Network restart process: <a href="https://drive.google.com/file/d/1JPyPp_pxBQBeaOiKJpnwvNqMtoNP-kvX/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Guide - Manual Code stop and restart process: <a href="https://drive.google.com/file/d/11an7DyW4CkSi75joM3tM3qw6BB7O0hjr/view?usp=drive_link" target="_blank">URL</a></li>
-    </ul>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
 
-    <h2>Special Client Deployment</h2>
-    <ul>
-        <li>MHE model Run-test process: <a href="https://drive.google.com/file/d/1s0mwJJdyBsf77Y3fvR9Vkz9um4EN5VOF/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>MS - General Guide v1: <a href="https://drive.google.com/file/d/1bNeHJgs6A14gNKWyGrAYoxevAUBjND9W/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Near miss_PPE_VD - Process Document: <a href="https://drive.google.com/file/d/1PZiXEmi_Bz86mOU7OYCPl0YnuzPGE57q/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Northern Railway - Vegetation - Process: <a href="https://drive.google.com/file/d/1EBBUmsttjPAgwrDZhgQkiAaH-R4h9iB0/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>SWR: <a href="https://drive.google.com/file/d/1M9xMPWqtKjM7202hg_4geCJNQLimuWQz/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Adding Alerts and Max min - Process: <a href="https://drive.google.com/file/d/17mBwzd6ZbbvIBUWLwbJMtXNa7kFTvTUG/view?usp=drive_link" target="_blank">URL</a></li>
-    </ul>
+        <button onclick="authenticate()">Login</button>
+    </div>
 
-    <h2>Maintenance Process</h2>
-    <ul>
-        <li>Maintenance Master Process - v2: <a href="https://drive.google.com/file/d/1pLs1BeeP9Ou8-5fFavopB1fnBRMwb8l5/view?usp=drive_link" target="_blank">URL</a></li>
-    </ul>
+    <div id="document-links" style="display: none;">
+        <h2>General Process Document</h2>
+           <ul>
+               <li>Deployment - Role & responsibilities: <a href="https://drive.google.com/file/d/1yNu9rt45qoIrKUe5wlpjDT-0dF8szOSi/view?usp=sharing" target="_blank">URL</a></li>
+               <li>Glimpse Analytics - Holiday Request Process: <a href="https://drive.google.com/file/d/1GyPjwxILzbsK7YdSj9CFstY3vUlkW6Pk/view?usp=sharing" target="_blank">URL</a></li>
+               <li>Mentorship Plan - Sheet1: <a href="https://drive.google.com/file/d/1iEQFHhdvxuy_NSx2rt8oUpvkn47tRQ_N/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Performance Measurement Criteria - Main: <a href="https://drive.google.com/file/d/1I8qkSo7DE72NIa0HxGjTDicL9ekrIhiL/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Professional tips: <a href="https://drive.google.com/file/d/1BabgEePvWz5LeKdEnimTpz0O8Caysz2-/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Glimpse - Technical Guide - v1.0: <a href="https://drive.google.com/file/d/1A5f4tLzRJtz-lCKvdQqLeaAYLetEiXzn/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Todo Process: <a href="https://drive.google.com/file/d/1A5f4tLzRJtz-lCKvdQqLeaAYLetEiXzn/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Documents Etiquette : Template: <a href="https://docs.google.com/document/d/16EzlIreEYWeX8zqUrSAmM7LMV5UgSVvMPbtg3YZU8fU/edit?usp=sharing" target="_blank">URL</a></li>
+           </ul>
 
-    <h2>Tools</h2>
-    <ul>
-        <li>Data Patching Process Guide_shareable: <a href="https://drive.google.com/file/d/1ngcPhaiZQua_veR1NG73HU-ma_Qyho_P/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>QA tool walkthrough: <a href="https://drive.google.com/file/d/1TxRvpCfLGv7aPJ62xpS7gi5LPZvVh2-g/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>User Management process: <a href="https://drive.google.com/file/d/1s1ixqEIggvkrkIi_dJknlPF6-IFTOGOE/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Ops Code tool: <a href="https://drive.google.com/file/d/13i982aiCA8uzahFAK8ijGMSfHhUXVk1s/view?usp=drive_link" target="_blank">URL</a></li>
-        <li>Annotation instructions: <a href="https://drive.google.com/file/d/1IUjuZmMKwJIgrMMTAa5v3ClvFozlzmal/view?usp=drive_link" target="_blank">URL</a></li>
-    </ul>
+           <h2>Regular Deployment</h2>
+           <ul>
+               <li>New deployment process: <a href="https://drive.google.com/file/d/1vMVKks1QguVr9IOUSOFRDJtQ6gl39Ywj/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Combined Master Document v1: <a href="https://drive.google.com/file/d/1m7qavCpLPVPHdbMJAgekEniE8pGBmDUC/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Auto restart & Network restart process: <a href="https://drive.google.com/file/d/1JPyPp_pxBQBeaOiKJpnwvNqMtoNP-kvX/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Guide - Manual Code stop and restart process: <a href="https://drive.google.com/file/d/11an7DyW4CkSi75joM3tM3qw6BB7O0hjr/view?usp=drive_link" target="_blank">URL</a></li>
+           </ul>
+
+           <h2>Special Client Deployment</h2>
+           <ul>
+               <li>MHE model Run-test process: <a href="https://drive.google.com/file/d/1s0mwJJdyBsf77Y3fvR9Vkz9um4EN5VOF/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>MS - General Guide v1: <a href="https://drive.google.com/file/d/1bNeHJgs6A14gNKWyGrAYoxevAUBjND9W/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Near miss_PPE_VD - Process Document: <a href="https://drive.google.com/file/d/1PZiXEmi_Bz86mOU7OYCPl0YnuzPGE57q/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Northern Railway - Vegetation - Process: <a href="https://drive.google.com/file/d/1EBBUmsttjPAgwrDZhgQkiAaH-R4h9iB0/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>SWR: <a href="https://drive.google.com/file/d/1M9xMPWqtKjM7202hg_4geCJNQLimuWQz/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Adding Alerts and Max min - Process: <a href="https://drive.google.com/file/d/17mBwzd6ZbbvIBUWLwbJMtXNa7kFTvTUG/view?usp=drive_link" target="_blank">URL</a></li>
+           </ul>
+
+           <h2>Maintenance Process</h2>
+           <ul>
+               <li>Maintenance Master Process - v2: <a href="https://drive.google.com/file/d/1pLs1BeeP9Ou8-5fFavopB1fnBRMwb8l5/view?usp=drive_link" target="_blank">URL</a></li>
+           </ul>
+
+           <h2>Tools</h2>
+           <ul>
+               <li>Data Patching Process Guide_shareable: <a href="https://drive.google.com/file/d/1ngcPhaiZQua_veR1NG73HU-ma_Qyho_P/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>QA tool walkthrough: <a href="https://drive.google.com/file/d/1TxRvpCfLGv7aPJ62xpS7gi5LPZvVh2-g/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>User Management process: <a href="https://drive.google.com/file/d/1s1ixqEIggvkrkIi_dJknlPF6-IFTOGOE/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Ops Code tool: <a href="https://drive.google.com/file/d/13i982aiCA8uzahFAK8ijGMSfHhUXVk1s/view?usp=drive_link" target="_blank">URL</a></li>
+               <li>Annotation instructions: <a href="https://drive.google.com/file/d/1IUjuZmMKwJIgrMMTAa5v3ClvFozlzmal/view?usp=drive_link" target="_blank">URL</a></li>
+           </ul>
+
+    </div>
 
     <p>Created by Altaf Bargir</p>
+
+    <script>
+        function authenticate() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "glimpse" && password === "glimpsePassword") {
+                document.getElementById("login-form").style.display = "none";
+                document.getElementById("document-links").style.display = "block";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
 </body>
 </html>
